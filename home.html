@@ -1,0 +1,12 @@
+<!--home.html -->
+{
+    %block container%
+}
+<div>
+    {% for id, liquor in liqours.iteritems(%)}
+    <h2>{{liquor['name']}}</h2>
+    <img src={{liquor['pic']}} >
+    <p>{{liquor['price']}}</p>
+    {{%end for%}}
+</div>
+{%endblock%}
